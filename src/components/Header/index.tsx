@@ -1,17 +1,30 @@
-import { HeaderBar } from './styles'
+import { HeaderBar, LinkItem, Links, LinkCart } from './styles'
 import logo from '../../assets/images/logo.svg'
+import carrinho from '../../assets/images/carrinho.svg'
 
 const Header = () => (
   <HeaderBar>
-    <img src={logo} alt="EPLAY" />
-    <nav>
-      <ul>
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Novidades</a></li>
-        <li><a href="#">Promoções</a></li>
-      </ul>
-    </nav>
+    <div>
+      <img src={logo} alt="EPLAY" />
+      <nav>
+        <Links>
+          <LinkItem>
+            <a href="#">Categorias</a>
+          </LinkItem>
+          <LinkItem>
+            <a href="#">Novidades</a>
+          </LinkItem>
+          <LinkItem>
+            <a href="#">Promoções</a>
+          </LinkItem>
+        </Links>
+      </nav>
+    </div>
+    <LinkCart href="#">
+      0 - Produtos(s)
+      <img src={carrinho} alt="" />
+    </LinkCart>
   </HeaderBar>
 )
- 
+
 export default Header
