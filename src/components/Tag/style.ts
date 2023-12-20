@@ -10,4 +10,5 @@ export const TagContainer = styled.div<Props>`
   padding: ${(props) => (props.size === 'big' ? '24px 40px' : '6px 8px')};
   border-radius: 8px;
   display: inline-block;
+  margin-right: 8px;
 `
