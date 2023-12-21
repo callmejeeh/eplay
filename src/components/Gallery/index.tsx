@@ -1,6 +1,4 @@
 import Section from '../Section'
-import Hogwarts from '../../assets/images/fundo_hogwarts.png'
-import Spiderman from '../../assets/images/banner-homem-aranha.png'
 import { Item, Items, Action, Modal, ModalContent } from './styles'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
